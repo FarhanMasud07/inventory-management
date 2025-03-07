@@ -4,7 +4,8 @@
   "description": "This is a inventory management system produced by DigitifyX",
   "main": "main.js",
   "scripts": {
-    "dev": "nodemon main.js"
+    "dev": "nodemon main.js",
+    "build": "npm install --production"
   },
   "author": "DigitifyX",
   "license": "ISC",
