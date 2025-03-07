@@ -5,12 +5,14 @@ const sequelize = new Sequelize(
   process.env.DB_PASS,
   {
     host: process.env.DB_HOST,
-    dialect: process.env.DB_DIALECT || "mysql",
-    pool: {
-      max: 10,
-      min: 2,
-      acquire: 30000,
-      idle: 10000,
+    port: process.env.DB_PORT,
+    dialect: "mysql",
+    logging: false, // Disable logs
+    dialectOptions: {
+      ssl: {
+        require: false, // Change to true if SSL is required
+        rejectUnauthorized: false,
+      },
     },
   }
 );
