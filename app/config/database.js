@@ -10,8 +10,7 @@ const sequelize = new Sequelize(
     logging: false, // Disable logs
     dialectOptions: {
       ssl: {
-        require: false, // Change to true if SSL is required
-        rejectUnauthorized: false,
+        rejectUnauthorized: true,
       },
     },
   }
