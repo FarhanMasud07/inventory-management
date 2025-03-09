@@ -1,0 +1,23 @@
+{
+  "name": "inventory-management",
+  "version": "1.0.0",
+  "description": "This is a inventory management system produced by DigitifyX",
+  "main": "main.js",
+  "scripts": {
+    "dev": "nodemon main.js",
+    "build": "npm install --production"
+  },
+  "author": "DigitifyX",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.13.0",
+    "nodemon": "^3.1.9",
+    "sequelize": "^6.37.6",
+    "zod": "^3.24.2"
+  }
+}
