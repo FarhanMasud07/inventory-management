@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "nodemon main.js",
     "build": "npm install --production",
-    "migrate-prod": "npx sequelize-cli db:migrate --env=production",
-    "migrate-dev": "npx sequelize-cli db:migrate --config=config/config.js"
+    "migrate": "npx sequelize-cli db:migrate --config=config/config.js"
   },
   "author": "DigitifyX",
   "license": "ISC",
