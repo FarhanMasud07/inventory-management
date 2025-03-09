@@ -1,4 +1,4 @@
-import Product from "../../models/Product.js";
+import { Product } from "../../models/RootModel.js";
 
 const getAllProducts = async (page = 1, limit = 10) => {
   return await Product.findAndCountAll({
