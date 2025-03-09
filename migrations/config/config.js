@@ -11,8 +11,11 @@ export default {
     dialect: process.env.DB_DIALECT || "mysql",
   },
   production: {
-    use_env_variable:
-      "mysql://root:iUihzRESTijNuhXZcnUbZalydYucrJvR@shortline.proxy.rlwy.net:23570/railway",
-    dialect: "mysql",
+    username: process.env.DB_USER,
+    password: process.env.DB_PASS,
+    database: process.env.DB_NAME,
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT || 3306,
+    dialect: process.env.DB_DIALECT || "mysql",
   },
 };
