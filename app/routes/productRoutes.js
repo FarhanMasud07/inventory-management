@@ -10,7 +10,7 @@ import {
   authenticateUser,
   authorizeRoles,
 } from "../middleware/authMiddleware.js";
-import { roles } from "../config/constant.js";
+import { roles } from "../utils/constant.js";
 
 const productRoutes = express.Router();
 
