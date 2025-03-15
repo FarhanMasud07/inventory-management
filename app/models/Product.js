@@ -26,8 +26,7 @@ const Product = sequelize.define(
         model: Category,
         key: "id",
       },
-      onUpdate: "SET NULL",
-      onDelete: "SET NULL",
+      onUpdate: "CASCADE",
     },
     supplier_id: {
       type: DataTypes.INTEGER,
@@ -36,8 +35,7 @@ const Product = sequelize.define(
         model: Supplier,
         key: "id",
       },
-      onUpdate: "SET NULL",
-      onDelete: "SET NULL",
+      onUpdate: "CASCADE",
     },
     price: {
       type: DataTypes.DECIMAL(10, 2),

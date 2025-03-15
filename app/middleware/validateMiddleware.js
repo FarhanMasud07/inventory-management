@@ -14,4 +14,4 @@ const validate = (schema) => (req, res, next) => {
   }
 };
 
-export default validate;
+export { validate };
